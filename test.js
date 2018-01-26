@@ -26,7 +26,17 @@ var cases = [
 
   // negative skip
   ['!a!b!!c!d!', '!', -1, undefined, 0],
-  ['!a!b!!c!d!', '?', -1, undefined, -1]
+  ['!a!b!!c!d!', '?', -1, undefined, -1],
+
+  // empty needle
+  ['!a!b!!c!d!', '', 0, undefined, 0],
+  ['!a!b!!c!d!', '', 1, undefined, 1],
+  ['!a!b!!c!d!', '', 2, undefined, 2],
+  ['!a!b!!c!d!', '', 0, 0, 0],
+  ['!a!b!!c!d!', '', 0, 1, 1],
+  ['!a!b!!c!d!', '', 0, 2, 2],
+  ['!a!b!!c!d!', '', 1, 1, 2],
+  ['!a!b!!c!d!', '', 2, 2, 4]
 ]
 
 cases.forEach(function (testCase) {
