@@ -1,0 +1,36 @@
+{
+  "name": "nth-indexof",
+  "version": "0.0.0",
+  "description": "Find the nth position of a pattern in a string",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/nth-indexof.git"
+  },
+  "keywords": [
+    "indexOf",
+    "index",
+    "seek",
+    "pattern",
+    "str",
+    "string",
+    "search",
+    "skip",
+    "find",
+    "match"
+  ],
+  "author": "Thomas Watson <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/nth-indexof/issues"
+  },
+  "homepage": "https://github.com/watson/nth-indexof#readme"
+}
